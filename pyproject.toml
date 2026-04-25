@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlops_project"
+version = "0.0.1"
+authors = [
+  { name="Rahul", email="your.email@example.com" },
+]
+description = "A comprehensive MLOps pipeline using MongoDB and DagsHub"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# यहाँ आप मुख्य डिपेंडेंसीज लिख सकते हैं
+dependencies = [
+    "pandas",
+    "numpy",
+    "pymongo",
+    "pymongo[srv]",
+    "mlflow",
+    "dagshub",
+    "python-dotenv",
+    "ensure",
+    "pyYAML"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

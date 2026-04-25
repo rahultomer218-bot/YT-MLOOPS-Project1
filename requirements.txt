@@ -1,0 +1,18 @@
+# डेटाबेस और डेटा प्रोसेसिंग
+pymongo[srv]
+pandas
+numpy
+
+# MLOps और एक्सपेरिमेंट ट्रैकिंग
+mlflow
+dagshub
+
+# मॉडल बिल्डिंग और यूटिलिटीज़
+scikit-learn
+python-dotenv
+pyYAML
+ensure
+joblib
+
+# प्रोजेक्ट पैकेज के रूप में इंस्टॉल करने के लिए
+-e .
