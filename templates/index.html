@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Price Predictor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            padding: 40px;
+        }
+
+        .logo {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #e94560, #0f3460);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 18px;
+            color: #a8a8b3;
+            margin-bottom: 40px;
+        }
+
+        .btn-predict {
+            background: linear-gradient(to right, #e94560, #c62a47);
+            color: white;
+            padding: 16px 48px;
+            border: none;
+            border-radius: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 32px rgba(233, 69, 96, 0.4);
+        }
+
+        .btn-predict:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(233, 69, 96, 0.6);
+        }
+
+        .btn-train {
+            background: transparent;
+            color: #a8a8b3;
+            padding: 12px 32px;
+            border: 1px solid #a8a8b3;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-train:hover {
+            border-color: white;
+            color: white;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 60px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat h2 {
+            font-size: 36px;
+            color: #e94560;
+        }
+
+        .stat p {
+            font-size: 14px;
+            color: #a8a8b3;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🚗</div>
+        <h1>Vehicle Price Predictor</h1>
+        <p>AI se jaano apni gaadi ki sahi keemat — sirf kuch seconds mein!</p>
+
+        <a href="/predict" class="btn-predict">🔍 Price Predict Karo</a>
+        <br>
+        <a href="/train" class="btn-train">⚙️ Model Train Karo</a>
+
+        <div class="stats">
+            <div class="stat">
+                <h2>2000+</h2>
+                <p>Vehicles Trained</p>
+            </div>
+            <div class="stat">
+                <h2>99%</h2>
+                <p>Accuracy</p>
+            </div>
+            <div class="stat">
+                <h2>25+</h2>
+                <p>Features</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
